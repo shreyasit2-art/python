@@ -188,11 +188,128 @@
 # print(y, "years,", m, "months,", d, "days.")
 
 # 20. SI with different rates for each year
-p= float(input("Enterprinciple amount="))
-si = 0
-year = int(input("Enter year:"))
-for x in range(1,year+1):
-    r1= float(input(f"Enter rate for {x} year="))
-    si = p*r1*year/100
+# p= float(input("Enterprinciple amount="))
+# si = 0
+# year = int(input("Enter year:"))
+# for x in range(1,year+1):
+#     r1= float(input(f"Enter rate for {x} year="))
+#     si = p*r1*year/100
+# print(si)
 
-print(si)
+# 21. EMI Calculator
+
+
+# 22. Profit & Loss % Calculator
+# cp= float(input("Enter cost price="))
+# sp= float(input("Enter selling price="))
+# profit= sp - cp
+# if profit>0:
+#     pperc= (profit / (cp + sp))*100
+#     print("The profit percent=", pperc)
+# else:
+#     perc= (profit / (cp + sp))*100
+#     print("The loss percent=", perc)
+
+# # 23. Distance Between Two Points
+# #  taking coordinates of A
+# x1= float(input("Enter point A cordinate 'x1'="))
+# y1= float(input("Enter point A cordinate 'y1'="))
+# # taking coordinates of B
+# x2= float(input("Enter point B cordinate 'x2'="))
+# y2= float(input("Enter point B cordinate 'y2'="))
+
+# # distance travelled horizontally
+# x=0
+# if x1>x2:
+#     x= x1-x2
+# else:
+#     x= x2-x1
+
+# # distance travelled vertically
+# y=0
+# if y1>y2:
+#     y= y1-y2
+# else:
+#     y= y2-y1
+# # squaring  both values
+# X = x**2
+# Y = y**2
+
+# # the slope squared
+# S= X+Y
+# # slope value
+# s= S**(0.5)
+# print("The distance between the two points is=", s)
+
+# # 24. Loan Eligibility Checker
+# age= int(input("Enter your age="))
+# income= input("Enter your monthly income")
+# emptype= input("Enter your employment (SL= Salaried, SE= Self employed, NA= Not applicable)").lower()
+# emi= int(input("Enter total emi percent of income, if applicable, else enter 0="))
+
+# loan="Not applicable"
+# if 18>=age<65:
+#     loan="Is applicable"
+# elif int(income)<20000:
+#     loan="Is applicable"
+# elif emptype=="sl" and emptype=="se":
+#     loan="Is applicable"
+# elif emi<=40:
+#     loan="Is applicable"
+# else:
+#     loan="Not applicable"
+
+# print("Loan eligibility=", loan)
+
+# # 25. Percentage Calculator for 5 Subjects
+# s1= float(input("Enter marks of subject 1="))
+# s2= float(input("Enter marks of subject 2="))
+# s3= float(input("Enter marks of subject 3="))
+# s4= float(input("Enter marks of subject 4="))
+# s5= float(input("Enter marks of subject 5="))
+# total= s1+s2+s3+s4+s5
+# avg= total/5
+# print("Percentage=", avg)
+
+# # 26. Volume of Cylinder: π * r² * h
+# pi=3.14
+# r= float(input("Enter radius of cylinder in cm="))
+# h= float(input("Enter height of cylinder in cm="))
+# vol= pi*r**2*h
+# print("Volume of cylinder=", vol, "cm^3")
+
+# # 27. Currency Converter (INR to USD/EUR)
+# inr= float(input("Enter amount in INR="))
+# usd= inr*0.01113
+# eur= inr*0.0095
+# print("Amount in USD=", usd, "USD")
+# print("Amount in EUR=", eur, "EUR")
+
+# # 28. GST Split: CGST + SGST
+# amt= float(input("Enter amount="))
+# G= float(input("Enter GST percentage (e.g., 18 for 18%)="))
+# cgst= amt*(G/2)/100
+# sgst= amt*(G/2)/100
+# tot= amt + cgst + sgst
+# print("GST=", tot,)
+
+# # 29. CAGR: (End/Start)^(1/n) - 1
+# start= float(input("Enter initial amount="))
+# end= float(input("Enter final amount="))
+# n= int(input("Enter number of years="))
+# cagr= (end/start)**(1/n) - 1
+# print("CAGR=", cagr)
+# print("CAGR%=", cagr*100, "%")
+
+# # 30. Working Hours Salary with Overtime
+# hrs= float(input("Enter total number of hours worked in a week="))
+# hw= float(input("Enter your hourly wage="))
+# otr= float(input("Enter overtime rate="))
+# nwh=9*5
+# ot=nwh - hrs
+# if hw>nwh:
+#     sal= (nwh*hw) + ((hrs -nwh)*otr)
+# else:
+#     sal= hrs*hw
+
+# print("Total salary= Rs.", sal)
